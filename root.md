@@ -15,8 +15,24 @@
 * <a href="https://www.hackerrank.com/dashboard" target="_blank">Hackerrank: training, tests</a>
 
 ## Diverses
-* <a href="http://www.timeforcoffee.ch/" target="_blank">Travel: Time for Coffee</a>
-* <a href=".\images\images.md" target="_blank">Images</a>
+* <a href="http://www.timeforcoffee.ch/" target="_blank">Time for Coffee (how long until train starts)</a>
+* <a href="https://www.tutorialspoint.com/" target="_blank">tutorialspoint (simple online learning)</a>
+* <a href=".\images\images.md" target="_blank">Images (some nice pictures)</a>
+* <a href="http://www.worldbank.org/" target="_blank">The World Bank (interessting data of the world)</a>
+* <a href="https://ifttt.com/" target="_blank">IFTTT (connect devices together)</a>
+* <a href="https://www.twilio.com/" target="_blank">twilio (add media to your app)</a>
+* <a href="https://brave.com/" target="_blank">brave (web browser)</a>
+* <a href="https://10minutemail.com/10MinuteMail/" target="_blank">10 minutes mail (get one mail address for 10 minutes)</a>
+* <a href="https://www.myjob.ch/" target="_blank">myjob.ch</a>
+
+## Security
+* <a href="https://auth0.com/" target="_blank">autho.com (platform for authentication)</a>
+
+## Testing
+* <a href="./testing/testing.md" target="_blank">Testing</a>
+
+## Hobbies
+* <a href="./hobbies/hobbies.md" target="_blank">Hobbies</a>
 
 
 ----

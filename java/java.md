@@ -1,5 +1,7 @@
 # Java
 
+- <a target="_blank" href="https://blog.oio.de/2018/03/22/java-ee-wurde-in-jakarta-ee-umbenannt/">Java EE wurde in Jakarta EE umbenannt</a>
+
 ## Best Practices
 
 ### Trivadis Training
@@ -15,3 +17,7 @@
 
 - <a href="http://spring.io/projects/spring-boot" target="_blank">Spring Boot: Documention</a>
 - <a target="_blank" href="http://www.mkyong.com/tutorials/spring-boot-tutorials/">Mkyong: Spring Boot Tutorials</a>
+
+### Building web apps
+
+- <a href="https://vaadin.com/" target="_blank">vaadin (UI)</a>
