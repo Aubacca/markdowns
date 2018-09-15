@@ -1,6 +1,7 @@
 # Java
 
 - <a target="_blank" href="https://blog.oio.de/2018/03/22/java-ee-wurde-in-jakarta-ee-umbenannt/">Java EE wurde in Jakarta EE umbenannt</a>
+- <a target="_blank" href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/enhancements.html">Java 8 Programming Language Enhancements</a>
 
 ## Best Practices
 
