@@ -15,14 +15,17 @@
 
 ## Libraries
 
-- <a href="https://github.com/ngrx/platform" target="_blank">@ngrx (Reactive libraries for Angular)</a>
-- <a href="https://gist.github.com/btroncone/a6e4347326749f938510" target="_blank">Comprehensive Introduction to @ngrx/store</a>
-- <a href="https://rxjs-dev.firebaseapp.com/" target="_blank">RxJS - Reactive Extensions Library for JavaScript</a>
-- <a href="http://rxmarbles.com/" target="_blank">RxJS Marbles</a>
-- <a href="https://github.com/typicode/json-server" target="_blank">JSON Server</a>
-- <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>
-- <a href="https://www.mocky.io/" target="_blank">mocky.io</a>
-- <a href="https://www.mocky.io/v2/58de0960280000a31d9e4bc1" target="_blank">mocky.io: sample</a>
+- Redux / ngrx / rxjs
+    - <a href="https://github.com/ngrx/platform" target="_blank">@ngrx (Reactive libraries for Angular)</a>
+    - <a href="https://gist.github.com/btroncone/a6e4347326749f938510" target="_blank">Comprehensive Introduction to @ngrx/store</a>
+    - <a href="https://rxjs-dev.firebaseapp.com/" target="_blank">RxJS - Reactive Extensions Library for JavaScript</a>
+    - <a href="http://rxmarbles.com/" target="_blank">RxJS Marbles</a>
+    - <a href="https://redux.js.org/" target="_blank">Redux Framework</a>
+- Data servers
+    - <a href="https://github.com/typicode/json-server" target="_blank">JSON Server</a>
+    - <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>
+    - <a href="https://www.mocky.io/" target="_blank">mocky.io</a>
+    - <a href="https://www.mocky.io/v2/58de0960280000a31d9e4bc1" target="_blank">mocky.io: sample</a>
 
 ## Components
 

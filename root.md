@@ -24,6 +24,7 @@
 * <a href="https://brave.com/" target="_blank">brave (web browser)</a>
 * <a href="https://10minutemail.com/10MinuteMail/" target="_blank">10 minutes mail (get one mail address for 10 minutes)</a>
 * <a href="https://www.myjob.ch/" target="_blank">myjob.ch</a>
+* <a href="https://aws.amazon.com/cloud9/?origin=c9io" target="_blank">AWS Cloud9 (IDE)</a>
 
 ## Security
 * <a href="https://auth0.com/" target="_blank">autho.com (platform for authentication)</a>
