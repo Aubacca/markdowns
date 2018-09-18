@@ -11,6 +11,12 @@
 ## Source Code Management
 * <a href="./scm/scm.md" target="_blank">Source Code Management</a>
 
+## Chocolatey
+* <a href="./Chocolatey/Chocolatey.md" target="_blank">Chocolatey</a>
+
+## Docker
+* <a href="./docker/docker.md" target="_blank">Docker</a>
+
 ## hackerrank.com
 * <a href="https://www.hackerrank.com/dashboard" target="_blank">Hackerrank: training, tests</a>
 
