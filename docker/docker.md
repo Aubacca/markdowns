@@ -14,6 +14,9 @@ List all images:
 docker image ls
 ```
 
+## Medium
+- <a target="_blank" href="https://rominirani.com/docker-on-windows-mounting-host-directories-d96f3f056a2c">Docker on Windows — Mounting Host Directories</a>
+
 ## Help
 
 Usage:	docker [OPTIONS] COMMAND
