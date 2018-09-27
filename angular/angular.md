@@ -47,6 +47,7 @@
 - <a href="https://blog.angularindepth.com/everything-you-need-to-know-about-debugging-angular-applications-d308ed8a51b4" target="_blank">Angular: Everything you need to know about debugging Angular applications</a>
 - <a target="_blank" href="https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4">Angular: Version 6 of Angular Now Available</a>
 - <a href="https://blog.bitsrc.io/11-angular-component-libraries-you-should-know-in-2018-e9f9c9d544ff" target="_blank">bitsrc: 11 Angular Component Libraries You Should Know In 2018</a>
+- <a target="\_blank" href="https://gist.github.com/btroncone/a6e4347326749f938510">GitHubGist: Comprehensive Introduction to @ngrx/store</a>
 - <a href="https://itnext.io/ngrx-best-practices-for-enterprise-angular-applications-6f00bcdf36d7" target="_blank">itnext.io: NgRx - Best Practices for Enterprise Angular Applications</a>
 - <a href="https://medium.com/front-end-hacking/a-guide-to-debugging-angular-applications-5a36bd88b4cf" target="_blank">Medium: A Guide To Debugging Angular Applications</a>
 - <a target="\_blank" href="https://itnext.io/angular-tutorial-create-loading-indicator-using-ngrx-687f8a66be0d">Medium: Angular tutorial - Create loading indicator using NgRx</a>
@@ -142,6 +143,17 @@ ng g module root-store/my-feature-store --flat false --module root-store/root-st
 
 2. Actions — Create an actions.ts file in the app/root-store/my-feature-store directory:
 
+Action Interface
+
+```javascript
+export interface Action {
+  type: string;
+  payload?: any;
+}
+```
+
+Example actions
+
 ```javaScript
 import { Action } from '@ngrx/store';
 import { User } from '../../models';
@@ -170,6 +182,19 @@ export class LoginSuccessAction implements Action {
 export type Actions = LoginRequestAction | LoginFailureAction | LoginSuccessAction;
 ```
 
+More sample Actions
+
+```javascript
+//simple action without a payload
+dispatch({ type: "DECREMENT" });
+
+//action with an associated payload
+dispatch({
+  type: ADD_TODO,
+  payload: { id: 1, message: "Learn ngrx/store", completed: true }
+});
+```
+
 3. State — Create a state.ts file in the app/root-store/my-feature-store directory
 
 ```javascript
@@ -189,6 +214,16 @@ export const initialState: State = {
 ```
 
 4. Reducer — Create a reducer.ts file in the app/root-store/my-feature-store directory
+
+Reducer Interface
+
+```javascript
+export interface Reducer<T> {
+  (state: T, action: Action): T;
+}
+```
+
+Example reducer: featureReducer
 
 ```javascript
 import { Actions, ActionTypes } from "./actions";
