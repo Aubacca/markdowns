@@ -40,12 +40,23 @@
 - <a href="https://www.primefaces.org/primeng/#/" target="_blank">PrimeNG (UI)</a>
 - <a href="https://github.com/valor-software/ng2-dragula" target="_blank">Dragula (drag'n'drop)</a>
 
-## How to ..
+## Blogs
 
-### Medium
+### Angular
 
 - <a href="https://blog.angularindepth.com/everything-you-need-to-know-about-debugging-angular-applications-d308ed8a51b4" target="_blank">Angular: Everything you need to know about debugging Angular applications</a>
 - <a target="_blank" href="https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4">Angular: Version 6 of Angular Now Available</a>
+
+### INTERTECH
+
+- <a href="https://www.intertech.com/Blog/ngrx-tutorial-actions-reducers-and-effects/" target="_blank">NgRx Tutorial: Actions, Reducers and Effects</a>
+- <a href="https://www.intertech.com/Blog/ngrx-tutorial-quickly-adding-ngrx-to-your-angular-6-project/" target="_blank">NgRx Tutorial: Quickly Adding NgRx to Your Angular 6 Project</a>
+- <a href="https://www.intertech.com/Blog/ngrx-tutorial-accessing-state-in-the-store/" target="_blank">NgRx Tutorial: Accessing State in the Store</a>
+- <a href="https://www.intertech.com/Blog/ngrx-tutorial-add-state-to-feature-module/" target="_blank">NgRx Tutorial: Add State to Feature Module</a>
+- <a href="https://www.intertech.com/Blog/ngrx-tutorial-add-router-info-to-state/" target="_blank">NgRx Tutorial: Add Router Info to State</a>
+
+### Medium
+
 - <a href="https://blog.bitsrc.io/11-angular-component-libraries-you-should-know-in-2018-e9f9c9d544ff" target="_blank">bitsrc: 11 Angular Component Libraries You Should Know In 2018</a>
 - <a target="\_blank" href="https://gist.github.com/btroncone/a6e4347326749f938510">GitHubGist: Comprehensive Introduction to @ngrx/store</a>
 - <a href="https://itnext.io/ngrx-best-practices-for-enterprise-angular-applications-6f00bcdf36d7" target="_blank">itnext.io: NgRx - Best Practices for Enterprise Angular Applications</a>
@@ -53,37 +64,92 @@
 - <a target="\_blank" href="https://itnext.io/angular-tutorial-create-loading-indicator-using-ngrx-687f8a66be0d">Medium: Angular tutorial - Create loading indicator using NgRx</a>
 - <a target="\_blank" href="https://medium.com/@amcdnl/dispatching-multiple-actions-from-ngrx-effects-c1447ceb6b22">Medium: Dispatching Multiple Actions from NGRX Effects</a>
 - <a href="https://medium.com/@amcdnl/global-error-handling-with-angular2-6b992bdfb59c" target="_blank">Medium: Global Error Handling with Angular2+</a>
+- <a target="_blank" href="https://medium.com/@amcdnl/introducing-ngrx-actions-3-0-557f6ce16678">Medium: Introducing NGRX Actions 3.0</a>
 - <a href="https://medium.com/ngrx/introducing-ngrx-entity-598176456e15" target="_blank">Medium: Introducing @ngrx/entity</a>
 - <a href="https://medium.com/@ladyleet/popups-modals-and-navigation-using-angular-material-2-components-in-your-angular-2-project-faf510dbcdee" target="_blank">Medium: Popups, Modals, and Navigation - Using Angular Material (2) Components in your Angular (2) Project</a>
-- <a target="\_blank" href="https://medium.com/default-to-open/understanding-a-large-scale-angular-app-with-ngrx-80f9fc5660cc">Medium: Understanding a large scale angular app with @ngrx</a>
+- <a target="_blank" href="https://medium.com/@roger.rudin/reducing-the-boilerplate-code-in-ngrx-dcf9ee9df16e">Medium: Reducing the boilerplate code in NGRX</a>
+- <a target="_blank" href="https://medium.com/@amcdnl/reducing-the-boilerplate-with-ngrx-actions-8de42a190aac">Medium: Reducing the boilerplate with NGRX-Actions</a>
+- <a target="_blank" href="https://medium.com/default-to-open/understanding-a-large-scale-angular-app-with-ngrx-80f9fc5660cc">Medium: Understanding a large scale angular app with @ngrx</a>
 - <a href="https://medium.com/@zalmoxis/using-redux-devtools-in-production-4c5b56c5600f" target="_blank">Medium: Using Redux DevTools in production</a>
-- <a target="\_blank" href="https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81">Medium: 6 Best Practices and Pro Tips when using Angular CLI</a>
+- <a target="_blank" href="https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81">Medium: 6 Best Practices and Pro Tips when using Angular CLI</a>
 
-### vehicle.service.ts: define return type
+## Best Practices
 
-Return type: <code>Vehicle[]</code>
+### How to define a service with type definition
+
+File name: vehicle.service.ts | Service name: VehicleService | Return type: <code>Vehicle[]</code>
 
 ```javascript
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
 import { Observable } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
-
 import { Vehicle } from './../models/vehicle.model';
-
 @Injectable({
   providedIn: 'root'
 })
 export class VehicleService {
   constructor(private _http: HttpClient) {}
-
   /**
    * Find all vehicles.
    * @returns {Vehicle[]}  -  A list of vehicles.
    */
   public findAll(): Observable<Vehicle[]> {
     return this._http.get<Vehicle[]>('http://localhost:3000/vehicles');
+  }
+}
+```
+
+### Service as component communication
+
+#### Communication service:
+
+````javascript
+import { Injectable } from '@angular/core';
+@Injectable()
+export class LessonSelectedService {
+
+  private _selected: BehaviorSubject<Lesson> = new BehaviorSubject(null);
+
+  public selected$ = this._selected.asObservable().filter(lesson => !!lesson);
+
+  select(lesson:Lesson) {
+        this._selected.next(lesson);
+  }
+}
+```
+#### Submitting component
+
+```javascript
+import { Component } from '@angular/core';
+@Component({
+  selector: 'custom-lessons-list',
+  template: '<lessons-list [lessons]="lessons" (lesson)="selectLesson($event)"></lessons-list>'
+})
+export class CustomLessonsListComponent {
+  constructor(private lessonSelectedService: LessonSelectedService) {}
+  selectLesson(lesson) {
+    this.lessonSelectedService.select(lesson);
+  }
+}
+```
+
+#### Listening component
+
+```javascript
+import { Component, OnInit } from '@angular/core';
+@Component({...})
+export class HomeComponent implements OnInit {
+  lessons: Lesson[];
+  constructor(
+    private lessonsService: LessonsService,
+    private lessonSelectedService: LessonSelectedService) {}
+  ngOnInit() {
+      ....
+      this.lessonSelectedService.selected$.subscribe(lesson => this.selectLesson(lesson));
+  }
+  selectLesson(lesson) {
+    ...
   }
 }
 ```
@@ -277,7 +343,7 @@ const getIsLoading = (state: State): boolean => state.isLoading;
 const getUser = (state: State): any => state.user;
 
 export const selectMyFeatureState: MemoizedSelector<object, State> =
-  createFeatureSelector < State > "myFeature";
+  createFeatureSelector < State > `("myFeature")`;
 
 export const selectMyFeatureError: MemoizedSelector<
   object,
@@ -450,7 +516,7 @@ Now that we have built our Root Store Module, composed of Feature Store Modules,
 1. Add RootStoreModule to your application’s NgModule.imports array. Make sure that when you import the module to pull from the barrel export
 
 ```javascript
-import { RootStoreModule } from ‘./root-store’;
+import { RootStoreModule } from "./root-store";
 ```
 
 2. Here’s an example container component that is using the store
@@ -497,3 +563,4 @@ export class MyFeatureComponent implements OnInit {
   }
 }
 ```
+````

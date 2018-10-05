@@ -10,10 +10,14 @@
 - <a target="_blank" href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array">Mozilla Developer Network: Array</a>
 - <a target="_blank" href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Destrukturierende_Zuweisung">Mozilla Developer Network: Destrukturierende Zuweisung</a>
 
+### Libraries
+
+- <a target="_blank" href="http://callmecavs.com/jump.js/">Jump.js</a>
+- <a target="_blank" href="https://mciastek.github.io/sal/">sal.js</a>
+
 ## TypeScript
 
 - <a target="_blank" href="https://basarat.gitbooks.io/typescript/">TypeScript Deep Dive</a>
-
 
 ### Medium
 
