@@ -46,6 +46,7 @@
 
 - <a href="https://blog.angularindepth.com/everything-you-need-to-know-about-debugging-angular-applications-d308ed8a51b4" target="_blank">Angular: Everything you need to know about debugging Angular applications</a>
 - <a target="_blank" href="https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4">Angular: Version 6 of Angular Now Available</a>
+- <a target="_blank" href="https://blog.grossman.io/real-world-angular-reactive-forms/">Angular Form: Real world angular reactive form</a>
 
 ### INTERTECH
 
@@ -61,17 +62,26 @@
 - <a target="\_blank" href="https://gist.github.com/btroncone/a6e4347326749f938510">GitHubGist: Comprehensive Introduction to @ngrx/store</a>
 - <a href="https://itnext.io/ngrx-best-practices-for-enterprise-angular-applications-6f00bcdf36d7" target="_blank">itnext.io: NgRx - Best Practices for Enterprise Angular Applications</a>
 - <a href="https://medium.com/front-end-hacking/a-guide-to-debugging-angular-applications-5a36bd88b4cf" target="_blank">Medium: A Guide To Debugging Angular Applications</a>
+- <a target="_blank" href="https://medium.com/coding-blocks/angular-6-routing-made-easy-part-1-f347c8a85947">Medium: Angular Routing Made Easy — Part 1</a>
+- <a target="_blank" href="https://medium.com/coding-blocks/angular-routing-made-easy-part-2-94a6764db89e">Medium: Angular Routing Made Easy — Part 2</a>
+- <a target="_blank" href="https://blog.angularindepth.com/angular-router-series-pillar-2-navigation-d050286bf4fa">Medium: Angular Router Series: Pillar 2 — Understanding The Router’s Navigation Cycle</a>
 - <a target="\_blank" href="https://itnext.io/angular-tutorial-create-loading-indicator-using-ngrx-687f8a66be0d">Medium: Angular tutorial - Create loading indicator using NgRx</a>
+- <a target="_blank" href="https://netbasal.com/connect-angular-forms-to-akita-store-d51845f621cd">Medium: Connect Angular Forms to Akita Store</a>
 - <a target="\_blank" href="https://medium.com/@amcdnl/dispatching-multiple-actions-from-ngrx-effects-c1447ceb6b22">Medium: Dispatching Multiple Actions from NGRX Effects</a>
 - <a href="https://medium.com/@amcdnl/global-error-handling-with-angular2-6b992bdfb59c" target="_blank">Medium: Global Error Handling with Angular2+</a>
 - <a target="_blank" href="https://medium.com/@amcdnl/introducing-ngrx-actions-3-0-557f6ce16678">Medium: Introducing NGRX Actions 3.0</a>
 - <a href="https://medium.com/ngrx/introducing-ngrx-entity-598176456e15" target="_blank">Medium: Introducing @ngrx/entity</a>
 - <a href="https://medium.com/@ladyleet/popups-modals-and-navigation-using-angular-material-2-components-in-your-angular-2-project-faf510dbcdee" target="_blank">Medium: Popups, Modals, and Navigation - Using Angular Material (2) Components in your Angular (2) Project</a>
+- <a target="_blank" href="https://medium.com/@amcdnl/reactive-angular-forms-with-ngrx-533a2f28c127">Medium: Reactive Angular Forms with NGRX</a>
 - <a target="_blank" href="https://medium.com/@roger.rudin/reducing-the-boilerplate-code-in-ngrx-dcf9ee9df16e">Medium: Reducing the boilerplate code in NGRX</a>
 - <a target="_blank" href="https://medium.com/@amcdnl/reducing-the-boilerplate-with-ngrx-actions-8de42a190aac">Medium: Reducing the boilerplate with NGRX-Actions</a>
 - <a target="_blank" href="https://medium.com/default-to-open/understanding-a-large-scale-angular-app-with-ngrx-80f9fc5660cc">Medium: Understanding a large scale angular app with @ngrx</a>
 - <a href="https://medium.com/@zalmoxis/using-redux-devtools-in-production-4c5b56c5600f" target="_blank">Medium: Using Redux DevTools in production</a>
 - <a target="_blank" href="https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81">Medium: 6 Best Practices and Pro Tips when using Angular CLI</a>
+
+### Others
+
+- <a target="_blank" href="https://mherman.org/blog/authentication-in-angular-with-ngrx/">Authentication in Angular with NGRX</a>
 
 ## Best Practices
 
@@ -171,6 +181,13 @@ To use of the @-annotations for imports within own project modules.
 
 ### Add NgRx Store
 
+#### @ngrx/schematics
+Scaffolding library for Angular applications using NgRx libraries.
+
+@ngrx/schematics provides CLI commands for generating files when building new NgRx feature areas and expanding existing ones. Built on top of Schematics, this tool integrates with the Angular CLI.
+
+- <a target="_blank" href="https://github.com/ngrx/platform/tree/master/docs/schematics">@ngrx/schematics</a>
+
 #### Best Practice #1 — The Root Store Module
 
 1. Install packages via NPM:
@@ -185,13 +202,13 @@ otherwise use this statement:
 npm install @ngrx/store @ngrx/effects @ngrx/store-devtools --save
 ```
 
-2. Generate RootStoreModule:
+2. Generate **RootStoreModule**:
 
 ```cmd
 ng g module root-store —-flat false —-module app.module.ts
 ```
 
-3. Generate RootState interface to represent the entire state of your application:
+3. Generate **RootState interface** to represent the entire state of your application:
 
 ```cmd
 ng g interface root-store/root-state
@@ -201,13 +218,13 @@ ng g interface root-store/root-state
 
 Suggested Implementation — Standard Feature Module
 
-1. Generate MyFeatureStoreModule feature module
+1. Generate **MyFeatureStoreModule** feature module
 
 ```cmd
 ng g module root-store/my-feature-store --flat false --module root-store/root-store.module.ts
 ```
 
-2. Actions — Create an actions.ts file in the app/root-store/my-feature-store directory:
+2. Actions — Create an **feature.actions.ts** file in the app/root-store/my-feature-store directory:
 
 Action Interface
 
@@ -224,28 +241,28 @@ Example actions
 import { Action } from '@ngrx/store';
 import { User } from '../../models';
 
-export enum ActionTypes {
+export enum FeatureActionTypes {
   LOGIN_REQUEST = '[My Feature] Login Request',
   LOGIN_FAILURE = '[My Feature] Login Failure',
   LOGIN_SUCCESS = '[My Feature] Login Success'
 }
 
-export class LoginRequestAction implements Action {
-  readonly type = ActionTypes.LOGIN_REQUEST;
+export class LoginRequest implements Action {
+  readonly type = FeatureActionTypes.LOGIN_REQUEST;
   constructor(public payload: { userName: string; password: string }) {}
 }
 
-export class LoginFailureAction implements Action {
-  readonly type = ActionTypes.LOGIN_FAILURE;
-  constructor(public payload: { error: string }) {}
-}
-
-export class LoginSuccessAction implements Action {
-  readonly type = ActionTypes.LOGIN_SUCCESS;
+export class LoginSuccess implements Action {
+  readonly type = FeatureActionTypes.LOGIN_SUCCESS;
   constructor(public payload: { user: User }) {}
 }
 
-export type Actions = LoginRequestAction | LoginFailureAction | LoginSuccessAction;
+export class LoginFailure implements Action {
+  readonly type = FeatureActionTypes.LOGIN_FAILURE;
+  constructor(public payload: { error: string }) {}
+}
+
+export type FeatureActions = LoginRequest | LoginFailure | LoginSuccess;
 ```
 
 More sample Actions
@@ -261,7 +278,7 @@ dispatch({
 });
 ```
 
-3. State — Create a state.ts file in the app/root-store/my-feature-store directory
+3. State — Create a **feature.state.ts** file in the **app/root-store/my-feature-store** directory
 
 ```javascript
 import { User } from "../../models";
@@ -279,7 +296,7 @@ export const initialState: State = {
 };
 ```
 
-4. Reducer — Create a reducer.ts file in the app/root-store/my-feature-store directory
+4. Reducer — Create a **feature.reducer.ts** file in the **app/root-store/my-feature-store** directory
 
 Reducer Interface
 
@@ -292,25 +309,25 @@ export interface Reducer<T> {
 Example reducer: featureReducer
 
 ```javascript
-import { Actions, ActionTypes } from "./actions";
+import { FeatureActions, FeatureActionTypes } from "./actions";
 import { initialState, State } from "./state";
 
-export function featureReducer(state = initialState, action: Actions): State {
+export function featureReducer(state = initialState, action: FeatureActions): State {
   switch (action.type) {
-    case ActionTypes.LOGIN_REQUEST:
+    case FeatureActionTypes.LOGIN_REQUEST:
       return {
         ...state,
         error: null,
         isLoading: true
       };
-    case ActionTypes.LOGIN_SUCCESS:
+    case FeatureActionTypes.LOGIN_SUCCESS:
       return {
         ...state,
         user: action.payload.user,
         error: null,
         isLoading: false
       };
-    case ActionTypes.LOGIN_FAILURE:
+    case FeatureActionTypes.LOGIN_FAILURE:
       return {
         ...state,
         error: action.payload.error,
@@ -323,7 +340,7 @@ export function featureReducer(state = initialState, action: Actions): State {
 }
 ```
 
-5. Selectors — Create a selectors.ts file in the app/root-store/my-feature-store directory
+5. Selectors — Create a **feature.selectors.ts** file in the **app/root-store/my-feature-store** directory
 
 ```javascript
 import {
@@ -334,21 +351,16 @@ import {
 
 import { User } from "../../models";
 
-import { State } from "./state";
-
-const getError = (state: State): any => state.error;
-
-const getIsLoading = (state: State): boolean => state.isLoading;
+import { State } from "./feature.state";
 
 const getUser = (state: State): any => state.user;
 
+const getIsLoading = (state: State): boolean => state.isLoading;
+
+const getError = (state: State): any => state.error;
+
 export const selectMyFeatureState: MemoizedSelector<object, State> =
   createFeatureSelector < State > `("myFeature")`;
-
-export const selectMyFeatureError: MemoizedSelector<
-  object,
-  any
-> = createSelector(selectMyFeatureState, getError);
 
 export const selectMyFeatureIsLoading: MemoizedSelector<
   object,
@@ -359,9 +371,14 @@ export const selectMyFeatureUser: MemoizedSelector<
   object,
   User
 > = createSelector(selectMyFeatureState, getUser);
+
+export const selectMyFeatureError: MemoizedSelector<
+  object,
+  any
+> = createSelector(selectMyFeatureState, getError);
 ```
 
-6. Effects — Create an effects.ts file in the app/root-store/my-feature-store directory with the following
+6. Effects — Create an **feature.effects.ts** file in the **app/root-store/my-feature-store** directory with the following:
 
 ```javascript
 import { Injectable } from '@angular/core';
@@ -369,8 +386,9 @@ import { Actions, Effect, ofType } from '@ngrx/effects';
 import { Action } from '@ngrx/store';
 import { Observable, of as observableOf } from 'rxjs';
 import { catchError, map, startWith, switchMap } from 'rxjs/operators';
+
 import { DataService } from '../../services/data.service';
-import * as featureActions from './actions';
+import * as featureActions from './feature.actions';
 
 @Injectable()
 export class MyFeatureStoreEffects {
@@ -379,36 +397,35 @@ export class MyFeatureStoreEffects {
   @Effect()
   loginRequestEffect$: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.LoginRequestAction>(
-      featureActions.ActionTypes.LOGIN_REQUEST
+      featureActions.FeatureActionTypes.LOGIN_REQUEST
     ),
     switchMap(action =>
       this.dataService
-	.login(action.payload.userName, action.payload.password)
-	.pipe(
-	  map(
-	    user =>
-	      new featureActions.LoginSuccessAction({
-		user
-	      })
-	  ),
-	  catchError(error =>
-	    observableOf(new featureActions.LoginFailureAction({ error }))
-	  )
-	)
+        .login(action.payload.userName, action.payload.password)
+        .pipe(
+          map(
+            data =>
+              new featureActions.LoginSuccessAction({ user: data})
+          ),
+          catchError(error =>
+            observableOf(new featureActions.LoginFailureAction({ error }))
+          )
+        )
     )
   );
 }
 ```
 
-7. Update the app/root-store/my-feature-store/my-feature-store.module.ts with the following
+7. Update the **app/root-store/my-feature-store/my-feature-store.module.ts** with the following:
 
 ```javascript
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
-import { MyFeatureStoreEffects } from "./effects";
-import { featureReducer } from "./reducer";
+
+import { MyFeatureStoreEffects } from "./feature.effects";
+import { featureReducer } from "./feature.reducer";
 
 @NgModule({
   imports: [
@@ -421,19 +438,19 @@ import { featureReducer } from "./reducer";
 export class MyFeatureStoreModule {}
 ```
 
-8. Create an app/root-store/my-feature-store/index.ts barrel export
+8. Create an **app/root-store/my-feature-store/index.ts** barrel export
 
 ```javascript
-import * as MyFeatureStoreActions from "./actions";
-import * as MyFeatureStoreSelectors from "./selectors";
-import * as MyFeatureStoreState from "./state";
+import * as MyFeatureStoreActions from "./feature.actions";
+import * as MyFeatureStoreSelectors from "./feature.selectors";
+import * as MyFeatureStoreState from "./feature.state";
 
 export { MyFeatureStoreModule } from "./my-feature-store.module";
 
 export { MyFeatureStoreActions, MyFeatureStoreSelectors, MyFeatureStoreState };
 ```
 
-9. Update app/root-store/root-state.ts and add a property for each feature that we have created previously
+9. Update **app/root-store/root-state.ts** and **add a property for each feature** that we have created previously
 
 ```javascript
 import { MyFeatureStoreState } from "./my-feature-store";
@@ -445,7 +462,7 @@ export interface State {
 }
 ```
 
-10. Update your app/root-store/root-store.module.ts by importing all feature modules, and importing the following NgRx modules
+10. Update your **app/root-store/root-store.module.ts** by importing all feature modules, and importing the following NgRx modules
 
 _StoreModule.forRoot({}) and EffectsModule.forRoot([]):_
 
@@ -454,6 +471,7 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
+
 import { MyFeatureStoreModule } from "./my-feature-store/";
 import { MyOtherFeatureStoreModule } from "./my-other-feature-store/";
 
@@ -470,12 +488,12 @@ import { MyOtherFeatureStoreModule } from "./my-other-feature-store/";
 export class RootStoreModule {}
 ```
 
-11. Create an app/root-store/selectors.ts file. This will hold any root state level selectors, such as a Loading property, or even an aggregate Error property
+11. Create an **app/root-store/selectors.ts** file. This will hold any root state level selectors, such as a Loading property, or even an aggregate Error property
 
 ```javascript
 import { createSelector, MemoizedSelector } from "@ngrx/store";
-import { MyFeatureStoreSelectors } from "./my-feature-store";
 
+import { MyFeatureStoreSelectors } from "./my-feature-store";
 import { MyOtherFeatureStoreSelectors } from "./my-other-feature-store";
 
 export const selectError: MemoizedSelector<object, string> = createSelector(
@@ -498,7 +516,7 @@ export const selectIsLoading: MemoizedSelector<
 );
 ```
 
-12. Create an app/root-store/index.ts barrel export for your store with the following
+12. Create an **app/root-store/index.ts** barrel export for your store with the following
 
 ```javascript
 import { RootStoreModule } from "./root-store.module";
