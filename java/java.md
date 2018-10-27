@@ -22,3 +22,24 @@
 ### Building web apps
 
 - <a href="https://vaadin.com/" target="_blank">vaadin (UI)</a>
+
+## Architecture
+
+### Domain Driven Design (DDD)
+
+Domain Driven Design ist eine Herangehensweise an die Modellierung komplexer Software. Die Modellierung der Software wird dabei massgeblich von den umzusetzenden Fachlichkeiten der Anwendungsdomäne beeinflusst. Der Begriff „Domain-driven Design“ wurde 2003 von Eric Evans in seinem gleichnamigen Buch geprägt.
+
+- <a href="https://jqassistant.org/" target="_blank">jQAssistant: check rules and project architecture</a>
+
+#### Youtube
+
+- <a href="https://www.youtube.com/watch?v=XOyyLwyrBQU" target="_blank">Onion architecture with stereotypes by Alain Sahli (inclusive **jQAssistant**)</a>
+- <a href="https://www.youtube.com/watch?v=pL9XeNjy_z4" target="_blank">Domain Driven Design Through Onion Architecture</a>
+
+### GraphQL
+
+GraphQL ist eine Open-Source-Datenabfrage- und -manipulationssprache und eine Laufzeitumgebung zum Ausführen von Abfragen mit vorhandenen Daten. GraphQL wurde 2012 intern von Facebook entwickelt, bevor es 2015 veröffentlicht wurde.
+
+#### Youtube
+
+- <a href="https://www.youtube.com/watch?v=PEcJxkylcRM" target="_blank">Building a GraphQL Server [Part 1] - What Is GraphQL? (Serie of 5)</a>
