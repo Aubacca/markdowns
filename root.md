@@ -4,6 +4,7 @@
 
 - <a href=".\html\html.md" target="_blank">HTML / CSS</a>
 - <a href="./java/java.md" target="_blank">Java</a>
+    - <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
 - <a href="./javascript/typeScript.md" target="_blank">JavaScript / TypeScript</a>
 - <a href="./nodejs/nodejs.md" target="_blank">NodeJS</a>
 
