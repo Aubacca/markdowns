@@ -46,7 +46,7 @@
 
 - <a href="https://blog.angularindepth.com/everything-you-need-to-know-about-debugging-angular-applications-d308ed8a51b4" target="_blank">Angular: Everything you need to know about debugging Angular applications</a>
 - <a target="_blank" href="https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4">Angular: Version 6 of Angular Now Available</a>
-- <a target="_blank" href="https://blog.grossman.io/real-world-angular-reactive-forms/">Angular Form: Real world angular reactive form</a>
+- <a target="_blank" href="https://blog.grossman.io/real-world-angular-reactive-forms/">codebits - Angular Form: Real world angular reactive form</a>
 
 ### INTERTECH
 
@@ -62,9 +62,9 @@
 - <a target="\_blank" href="https://gist.github.com/btroncone/a6e4347326749f938510">GitHubGist: Comprehensive Introduction to @ngrx/store</a>
 - <a href="https://itnext.io/ngrx-best-practices-for-enterprise-angular-applications-6f00bcdf36d7" target="_blank">itnext.io: NgRx - Best Practices for Enterprise Angular Applications</a>
 - <a href="https://medium.com/front-end-hacking/a-guide-to-debugging-angular-applications-5a36bd88b4cf" target="_blank">Medium: A Guide To Debugging Angular Applications</a>
-- <a target="_blank" href="https://medium.com/coding-blocks/angular-6-routing-made-easy-part-1-f347c8a85947">Medium: Angular Routing Made Easy — Part 1</a>
-- <a target="_blank" href="https://medium.com/coding-blocks/angular-routing-made-easy-part-2-94a6764db89e">Medium: Angular Routing Made Easy — Part 2</a>
-- <a target="_blank" href="https://blog.angularindepth.com/angular-router-series-pillar-2-navigation-d050286bf4fa">Medium: Angular Router Series: Pillar 2 — Understanding The Router’s Navigation Cycle</a>
+- <a target="_blank" href="https://medium.com/coding-blocks/angular-6-routing-made-easy-part-1-f347c8a85947">Medium: Angular Routing Made Easy - Part 1</a>
+- <a target="_blank" href="https://medium.com/coding-blocks/angular-routing-made-easy-part-2-94a6764db89e">Medium: Angular Routing Made Easy - Part 2</a>
+- <a target="_blank" href="https://blog.angularindepth.com/angular-router-series-pillar-2-navigation-d050286bf4fa">Medium: Angular Router Series: Pillar 2 - Understanding The Router's Navigation Cycle</a>
 - <a target="\_blank" href="https://itnext.io/angular-tutorial-create-loading-indicator-using-ngrx-687f8a66be0d">Medium: Angular tutorial - Create loading indicator using NgRx</a>
 - <a target="_blank" href="https://netbasal.com/connect-angular-forms-to-akita-store-d51845f621cd">Medium: Connect Angular Forms to Akita Store</a>
 - <a target="\_blank" href="https://medium.com/@amcdnl/dispatching-multiple-actions-from-ngrx-effects-c1447ceb6b22">Medium: Dispatching Multiple Actions from NGRX Effects</a>
@@ -82,6 +82,7 @@
 ### Others
 
 - <a target="_blank" href="https://mherman.org/blog/authentication-in-angular-with-ngrx/">Authentication in Angular with NGRX</a>
+- <a target="_blank" href="https://www.ng-conf.org/redux-form-validation-ngrx-forms/">Rangle.io - Redux Form Validation with ngrx-forms</a>
 
 ## Best Practices
 
@@ -114,7 +115,7 @@ export class VehicleService {
 
 #### Communication service:
 
-````javascript
+```javascript
 import { Injectable } from '@angular/core';
 @Injectable()
 export class LessonSelectedService {
@@ -128,6 +129,7 @@ export class LessonSelectedService {
   }
 }
 ```
+
 #### Submitting component
 
 ```javascript
@@ -182,13 +184,14 @@ To use of the @-annotations for imports within own project modules.
 ### Add NgRx Store
 
 #### @ngrx/schematics
+
 Scaffolding library for Angular applications using NgRx libraries.
 
 @ngrx/schematics provides CLI commands for generating files when building new NgRx feature areas and expanding existing ones. Built on top of Schematics, this tool integrates with the Angular CLI.
 
 - <a target="_blank" href="https://github.com/ngrx/platform/tree/master/docs/schematics">@ngrx/schematics</a>
 
-#### Best Practice #1 — The Root Store Module
+#### Best Practice #1 - The Root Store Module
 
 1. Install packages via NPM:
 
@@ -214,9 +217,9 @@ ng g module root-store —-flat false —-module app.module.ts
 ng g interface root-store/root-state
 ```
 
-#### Best Practice #2 — Create Feature Store Module(s)
+#### Best Practice #2 - Create Feature Store Module(s)
 
-Suggested Implementation — Standard Feature Module
+Suggested Implementation - Standard Feature Module
 
 1. Generate **MyFeatureStoreModule** feature module
 
@@ -224,7 +227,7 @@ Suggested Implementation — Standard Feature Module
 ng g module root-store/my-feature-store --flat false --module root-store/root-store.module.ts
 ```
 
-2. Actions — Create an **feature.actions.ts** file in the app/root-store/my-feature-store directory:
+2. Actions - Create an **feature.actions.ts** file in the app/root-store/my-feature-store directory:
 
 Action Interface
 
@@ -278,7 +281,7 @@ dispatch({
 });
 ```
 
-3. State — Create a **feature.state.ts** file in the **app/root-store/my-feature-store** directory
+3. State - Create a **feature.state.ts** file in the **app/root-store/my-feature-store** directory
 
 ```javascript
 import { User } from "../../models";
@@ -296,7 +299,7 @@ export const initialState: State = {
 };
 ```
 
-4. Reducer — Create a **feature.reducer.ts** file in the **app/root-store/my-feature-store** directory
+4. Reducer - Create a **feature.reducer.ts** file in the **app/root-store/my-feature-store** directory
 
 Reducer Interface
 
@@ -312,7 +315,10 @@ Example reducer: featureReducer
 import { FeatureActions, FeatureActionTypes } from "./actions";
 import { initialState, State } from "./state";
 
-export function featureReducer(state = initialState, action: FeatureActions): State {
+export function featureReducer(
+  state = initialState,
+  action: FeatureActions
+): State {
   switch (action.type) {
     case FeatureActionTypes.LOGIN_REQUEST:
       return {
@@ -340,7 +346,7 @@ export function featureReducer(state = initialState, action: FeatureActions): St
 }
 ```
 
-5. Selectors — Create a **feature.selectors.ts** file in the **app/root-store/my-feature-store** directory
+5. Selectors - Create a **feature.selectors.ts** file in the **app/root-store/my-feature-store** directory
 
 ```javascript
 import {
@@ -378,7 +384,7 @@ export const selectMyFeatureError: MemoizedSelector<
 > = createSelector(selectMyFeatureState, getError);
 ```
 
-6. Effects — Create an **feature.effects.ts** file in the **app/root-store/my-feature-store** directory with the following:
+6. Effects - Create an **feature.effects.ts** file in the **app/root-store/my-feature-store** directory with the following:
 
 ```javascript
 import { Injectable } from '@angular/core';
@@ -529,15 +535,15 @@ export { RootStoreState, RootStoreSelectors, RootStoreModule };
 
 #### Wiring up the Root Store Module to your Application
 
-Now that we have built our Root Store Module, composed of Feature Store Modules, let’s add it to the main app.module.ts and show just how neat and clean the wiring up process is.
+Now that we have built our Root Store Module, composed of Feature Store Modules, let's add it to the main app.module.ts and show just how neat and clean the wiring up process is.
 
-1. Add RootStoreModule to your application’s NgModule.imports array. Make sure that when you import the module to pull from the barrel export
+1. Add RootStoreModule to your application's NgModule.imports array. Make sure that when you import the module to pull from the barrel export
 
 ```javascript
 import { RootStoreModule } from "./root-store";
 ```
 
-2. Here’s an example container component that is using the store
+2. Here's an example container component that is using the store
 
 ```javascript
 import { Component, OnInit } from '@angular/core';
@@ -581,4 +587,3 @@ export class MyFeatureComponent implements OnInit {
   }
 }
 ```
-````

@@ -25,6 +25,10 @@
 
 ## Architecture
 
+### Servers
+
+- <a href="https://kafka.apache.org/" target="_blank">Apache Kafka</a>
+
 ### Domain Driven Design (DDD)
 
 Domain Driven Design ist eine Herangehensweise an die Modellierung komplexer Software. Die Modellierung der Software wird dabei massgeblich von den umzusetzenden Fachlichkeiten der Anwendungsdomäne beeinflusst. Der Begriff „Domain-driven Design“ wurde 2003 von Eric Evans in seinem gleichnamigen Buch geprägt.

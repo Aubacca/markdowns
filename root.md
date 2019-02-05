@@ -10,6 +10,7 @@
 ## Frameworks: Best Practices and Tips
 
 - <a href="./angular/angular.md" target="_blank">Angular</a>
+- <a href="https://electronjs.org/" target="_blank">Electron</a>
 
 ## Source Code Management
 
@@ -47,6 +48,12 @@
 ## Security
 
 - <a href="https://auth0.com/" target="_blank">autho.com (platform for authentication)</a>
+- <a href="https://jwt.io/" target="_blank">JWT - JSON Web Tokens</a>
+
+```php
+netsh wlan show profiles
+netsh wlan show profile "Pro iPhone" key=clear
+```
 
 ## Testing
 
@@ -113,9 +120,10 @@
 - <a href="https://www.hackerrank.com/dashboard" target="_blank">hackerrank</a>
 - <a href="https://www.tutorialspoint.com/" target="_blank">tutorialspoint</a>
 
-## Web Servers
+## Application Servers / Web Servers
 
-- <a href="http://vertx.io/docs/" target="_blank">Vert.x</a>
+- <a href="http://vertx.io/docs/" target="_blank">app server: Vert.x</a>
+- <a href="./appServer/nginx/nginx.md" target="_blank">web server: nginx</a>
 
 ## Web Page Styling
 
