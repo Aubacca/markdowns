@@ -2,8 +2,11 @@
 
 - <a href="https://blog.oio.de/2018/03/22/java-ee-wurde-in-jakarta-ee-umbenannt/" target="_blank">Java EE wurde in Jakarta EE umbenannt</a>
 - <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/enhancements.html" target="_blank">Java 8 Programming Language Enhancements</a>
+- <a href="https://www.oio.de/public/java/java9/java-9-neuerungen-im-ueberblick.htm?TVD" target="_blank">Java 9 - Die Neuerungen im Überblick</a>
+- <a href="https://jaxenter.de/java-11-features-news-75411" target="_blank">Java 11 ist da! Die neuen Features auf einen Blick</a>
 
 ## Best Practices
+
 - <a href="./java-servlet.md" target="_blank">Java Servlet</a>
 
 ### Trivadis Training
@@ -26,6 +29,7 @@
 #### The Jetty Maven plugin
 
 - Jetty: maven plugin with some configuration
+
 ```xml
   ...
   <build>
@@ -49,6 +53,7 @@
 ```
 
 Then start Jetty via maven:
+
 ```sh
 mvn jetty:run
 ```
@@ -56,6 +61,7 @@ mvn jetty:run
 #### The Tomcat Maven plugin
 
 - Tomcat: maven plugin with some configuration
+
 ```xml
   ...
   <build>
@@ -79,6 +85,7 @@ mvn jetty:run
 ```
 
 Then start Tomcat via maven:
+
 ```sh
 mvn clean install tomcat7:run
 ```
@@ -88,6 +95,7 @@ mvn clean install tomcat7:run
 <a href="https://github.com/jsimone/webapp-runner" target="_blank">Webapp Runner</a>
 
 Webapp Runner: maven plugin with some configuration
+
 ```xml
   ...
   <build>
@@ -118,16 +126,19 @@ Webapp Runner: maven plugin with some configuration
 ```
 
 Then package app via maven:
+
 ```sh
 mvn package
 ```
 
 Then launch app via java:
+
 ```sh
 java -jar target/dependency/webapp-runner.jar target/<appname>.war
 ```
 
 Then launch app via java. In versions 7.0.29.1 and newer support for a session manager that stores sessions in memcache is built in.
+
 ```sh
 $ java -jar target/dependency/webapp-runner.jar --session-store memcache target/<appname>.war
 ```
@@ -144,6 +155,7 @@ $ java -jar target/dependency/webapp-runner.jar --session-store memcache target/
 #### Maven Archetypes
 
 - Simple Web Application
+
 ```sh
 mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp
 ```
@@ -188,3 +200,11 @@ GraphQL ist eine Open-Source-Datenabfrage- und -manipulationssprache und eine La
 #### Youtube
 
 - <a href="https://www.youtube.com/watch?v=PEcJxkylcRM" target="_blank">Building a GraphQL Server [Part 1] - What Is GraphQL? (Serie of 5)</a>
+
+## Security
+
+- <a href="https://blog.oio.de/2018/08/20/eine-einfuhrung-in-oauth-2/" target="_blank">Eine Einführung in OAuth 2</a>
+
+## Struts
+
+- <a href="https://www.mkyong.com/struts2/struts-2-hello-world-example/" target="_blank">Mkyong - Struts 2 Hello World Example</a>

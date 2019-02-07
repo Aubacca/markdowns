@@ -4,7 +4,7 @@
 
 - <a href=".\html\html.md" target="_blank">HTML / CSS</a>
 - <a href="./java/java.md" target="_blank">Java</a>
-    - <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
+  - <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
 - <a href="./javascript/typeScript.md" target="_blank">JavaScript / TypeScript</a>
 - <a href="./nodejs/nodejs.md" target="_blank">NodeJS</a>
 
@@ -137,6 +137,9 @@ netsh wlan show profile "Pro iPhone" key=clear
 
 - <a target="_blank" href="https://chocolatey.org/">Chocolatey - Software Management Automation</a>
 - <a target="_blank" href="https://gradle.org/">Gradle Build Tool</a>
+- <a href="https://yarnpkg.com/en/" target="_blank">Yarn - FAST, RELIABLE, AND SECURE DEPENDENCY MANAGEMENT</a>
+- <a href="https://nodejs.org/en/" target="_blank">Node.js - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</a>
+- <a href="https://www.npmjs.com/" target="_blank">npm - Build amazing things</a>
 
 ## Oracle
 
@@ -169,3 +172,7 @@ netsh wlan show profile "Pro iPhone" key=clear
 ## Fotos
 
 - <a href="https://www.pexels.com/photo/adventure-alpine-background-black-and-white-355770/" target="_blank">Pexels</a>
+
+# News Paper
+
+- <a href="https://www.20min.ch/schweiz/news/" target="_blank">20 Minuten - News</a>
