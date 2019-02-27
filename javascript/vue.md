@@ -6,6 +6,61 @@
 - <a href="https://cli.vuejs.org/" target="_blank">Vue CLI</a>
 - <a href="https://router.vuejs.org/" target="_blank">Vue Router</a>
 - <a href="https://vuex.vuejs.org/" target="_blank">Vuex</a>
+- <a href="https://vuematerial.io" target="_blank">Vue Material</a>
+
+### Component about.vue
+
+```javascript
+<template>
+  <div>
+    <h1>{{title}}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'about',
+  props: {
+    state: {
+      type: String,
+      default: 'INIT'
+    },
+    showFadeIn: {
+      type: Boolean,
+      default: false
+    },
+    loadedGame: {
+      type: Boolean,
+      default: false
+    },
+    gameMode: {
+      type: Object,
+      default: function () {
+        return {}
+      }
+    }
+  },
+  data() {
+    return {
+      title: 'This is an linked about page'
+    }
+  },
+  watch: {},
+  computed: {},
+  beforeCreate() {},
+  created() {},
+  beforeMount() {},
+  mounted() {},
+  beforeUpdate() {},
+  updated() {},
+  beforeDestroy() {},
+  destroyed() {}
+}
+</script>
+
+<style scoped>
+</style>
+```
 
 ## Libraries
 
@@ -110,7 +165,7 @@ import axios from 'axios'
 
 import { isProduction, env } from '@/utils/env'
 
-const http = null // not possible to create a private property in JavaScript, so we move it outside of the class, so that it's only accessible within this module
+var http = null // not possible to create a private property in JavaScript, so we move it outside of the class, so that it's only accessible within this module
 
 class APIProvider {
   constructor ({ url }) {
