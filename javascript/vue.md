@@ -3,10 +3,12 @@
 ## Basics
 
 - <a href="https://vuejs.org/" target="_blank">Vue.org</a>
+- <a href="https://vuejs.org/v2/style-guide/" target="_blank">Vue.js - Style Guide</a>
 - <a href="https://cli.vuejs.org/" target="_blank">Vue CLI</a>
 - <a href="https://router.vuejs.org/" target="_blank">Vue Router</a>
-- <a href="https://vuex.vuejs.org/" target="_blank">Vuex</a>
 - <a href="https://vuematerial.io" target="_blank">Vue Material</a>
+- <a href="https://vuex.vuejs.org/" target="_blank">Vuex</a>
+- <a href="https://scrimba.com/g/gvuex" target="_blank">Vuex - Learn Vuex</a>
 
 ### Component about.vue
 
