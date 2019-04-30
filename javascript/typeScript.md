@@ -9,6 +9,7 @@
 - <a target="_blank" href="https://developer.mozilla.org/de/">Mozilla Developer Network</a>
 - <a target="_blank" href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array">Mozilla Developer Network: Array</a>
 - <a target="_blank" href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Destrukturierende_Zuweisung">Mozilla Developer Network: Destrukturierende Zuweisung</a>
+- <a target="_blank" href="https://melanieseltzer.github.io/es6-all-the-things/">ES6 All The Things</a>
 
 ### Libraries
 
