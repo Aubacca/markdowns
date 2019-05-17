@@ -4,13 +4,14 @@
 
 - <a href=".\html\html.md" target="_blank">HTML / CSS</a>
 - <a href="./java/java.md" target="_blank">Java</a>
-    - <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
+  - <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
 - <a href="./javascript/typeScript.md" target="_blank">JavaScript / TypeScript</a>
 - <a href="./nodejs/nodejs.md" target="_blank">NodeJS</a>
 
 ## Frameworks: Best Practices and Tips
 
 - <a href="./angular/angular.md" target="_blank">Angular</a>
+- <a href="https://electronjs.org/" target="_blank">Electron</a>
 
 ## Source Code Management
 
@@ -48,6 +49,12 @@
 ## Security
 
 - <a href="https://auth0.com/" target="_blank">autho.com (platform for authentication)</a>
+- <a href="https://jwt.io/" target="_blank">JWT - JSON Web Tokens</a>
+
+```php
+netsh wlan show profiles
+netsh wlan show profile "Pro iPhone" key=clear
+```
 
 ## Testing
 
@@ -114,9 +121,10 @@
 - <a href="https://www.hackerrank.com/dashboard" target="_blank">hackerrank</a>
 - <a href="https://www.tutorialspoint.com/" target="_blank">tutorialspoint</a>
 
-## Web Servers
+## Application Servers / Web Servers
 
-- <a href="http://vertx.io/docs/" target="_blank">Vert.x</a>
+- <a href="http://vertx.io/docs/" target="_blank">app server: Vert.x</a>
+- <a href="./appServer/nginx/nginx.md" target="_blank">web server: nginx</a>
 
 ## Web Page Styling
 
@@ -129,6 +137,9 @@
 
 - <a target="_blank" href="https://chocolatey.org/">Chocolatey - Software Management Automation</a>
 - <a target="_blank" href="https://gradle.org/">Gradle Build Tool</a>
+- <a href="https://yarnpkg.com/en/" target="_blank">Yarn - FAST, RELIABLE, AND SECURE DEPENDENCY MANAGEMENT</a>
+- <a href="https://nodejs.org/en/" target="_blank">Node.js - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</a>
+- <a href="https://www.npmjs.com/" target="_blank">npm - Build amazing things</a>
 
 ## Oracle
 
@@ -161,3 +172,7 @@
 ## Fotos
 
 - <a href="https://www.pexels.com/photo/adventure-alpine-background-black-and-white-355770/" target="_blank">Pexels</a>
+
+# News Paper
+
+- <a href="https://www.20min.ch/schweiz/news/" target="_blank">20 Minuten - News</a>

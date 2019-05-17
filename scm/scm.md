@@ -2,8 +2,9 @@
 
 ## Git
 
-- <a target="_blank" href="https://github.com/Aubacca">github: Aubacca</a>
-- <a target="_blank" href="https://rogerdudler.github.io/git-guide/index.de.html">git - Der einfache Einstieg</a>
-- <a target="_blank" href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a>
+- <a href="https://github.com/Aubacca" target="_blank">github: Aubacca</a>
+- <a href="https://bitbucket.org/socialauth/choose-account/" target="_blank">Bitbucket: Aubacca</a>
+- <a href="https://rogerdudler.github.io/git-guide/index.de.html" target="_blank">git - Der einfache Einstieg</a>
+- <a href="https://chris.beams.io/posts/git-commit/" target="_blank">How to Write a Git Commit Message</a>
 
 ## SVN
