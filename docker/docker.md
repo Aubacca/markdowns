@@ -4,6 +4,12 @@
 - <a target="_blank" href="https://hub.docker.com/">Docker Hub</a>
 - <a target="_blank" href="https://docker-curriculum.com/">Docker for Beginners</a>
 
+docker und docker composer version:
+```cmd
+docker -v
+docker-compose -v
+```
+
 List all processes:
 ```cmd
 docker ps
