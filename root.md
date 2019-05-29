@@ -156,12 +156,17 @@ netsh wlan show profile "Pro iPhone" key=clear
 - <a target="_blank" href="https://www.pwabuilder.com/">PWA Builder</a>
 - <a target="_blank" href="https://vaadin.com/progressive-web-applications">vaadin: Progressiv Web Apps Tutorial</a>
 
-## VS Code
+## VS Code	
 
 ### Good Plugins
 
 - add
 - background-black-and-white-355770/
+
+# Cool Tool
+
+- <a target="_blank" href="https://www.freeformatter.com/">Free Online Tools For Developers</a>
+- <a target="_blank" href="http://www.tinyupload.com/">TinyUpload.com</a>
 
 # Hobby
 
