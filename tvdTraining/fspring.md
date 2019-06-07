@@ -97,12 +97,40 @@ public class Project {
 
 ### Internet
 
-- <a href="" target="_blank"></a>
+- <a href="https://howtodoinjava.com/spring-5-tutorial/" target="_blank">Spring 5 Tutorial</a>
+- <a href="http://www.java2s.com/Tutorials/Java/Spring/index.htm" target="_blank">Spring Tutorial - Spring Introduction</a>
 
 ### Samples
 
-```java
+spring-configuration.xml
 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+	default-init-method="initBean" default-destroy-method="destroyBean">
+
+    <!-- Sample bean definition with Spring XML configuration. -->
+	<bean id="personSpring" class="ch.rohner.spring.beans.Person" >
+		<description>XML configuration is not in the class path but in the project root directory.</description>
+		<property name="name" value="With ApplicationContext and property in spring.xml created!"></property>
+	</bean>
+
+	<!-- Following definition can replace all other org.springframework.. bean definitions. -->
+	<context:annotation-config />
+</beans>
+```
+
+```java
+...
+ApplicationContext context = new ClassPathXmlApplicationContext("spring-configuration.xml");
+Person person = (Person) context.getBean("personSpring");
+...
 ```
 
 ## Testen mit Spring

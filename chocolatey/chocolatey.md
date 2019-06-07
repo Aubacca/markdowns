@@ -8,7 +8,7 @@ Chocolatey - Software Management Automation
 * <a href="https://chocolatey.org/packages" target="_blank">Chocolatey Packages</a>
 
 ```cmd
-choco istall [package]
+choco install [package]
 ```
 
 ```cmd
@@ -16,7 +16,7 @@ choco upgrade [package]
 ```
 
 ```cmd
-choco unistall [package]
+choco uninstall [package]
 ```
 
 ```cmd

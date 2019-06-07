@@ -1,5 +1,7 @@
 # Java
 
+- <a href="https://howtodoinjava.com/" target="_blank">Spring Framework and others. <b><== !IMPORTANT</b></a>
+- <a href="http://www.java2s.com/" target="_blank">Java how to .. <b><== !IMPORTANT</b></a>
 - <a href="https://blog.oio.de/2018/03/22/java-ee-wurde-in-jakarta-ee-umbenannt/" target="_blank">Java EE wurde in Jakarta EE umbenannt</a>
 - <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/enhancements.html" target="_blank">Java 8 Programming Language Enhancements</a>
 - <a href="https://www.oio.de/public/java/java9/java-9-neuerungen-im-ueberblick.htm?TVD" target="_blank">Java 9 - Die Neuerungen im Überblick</a>
@@ -12,6 +14,7 @@
 ### Trivadis Training
 
 - <a href="file:///C:/workspace/projects/tvd/markdowns/tvdTraining/ad-java-b.md" target="_blank">Java for Developers - Additionals</a>
+- <a href="../tvdTraining/fspring.md" target="_blank">Einführung in das Spring Framework (FSPRING)</a>
 
 ## Web Applications
 
