@@ -1,6 +1,15 @@
 # Spring Boot - Micro Services
 
+* [Service Discovery: Eureka Clients](https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html)
+* [Service Registration and Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)
+* [Spring Cloud Sample](https://github.com/spring-cloud-samples)
+* [Eureka interop Release Train at github](https://github.com/spring-cloud-samples/eureka-release-train-interop)
+
 ## Eureka Discovery Server Settings
+
+* [Eureka Server Sample at github](https://github.com/spring-cloud-samples/eureka)
+* [Hystrix Dashboard at github](https://github.com/spring-cloud-samples/hystrix-dashboard)
+* [feign-eureka at github](https://github.com/spring-cloud-samples/feign-eureka)
 
 pom.xml
 ```xml

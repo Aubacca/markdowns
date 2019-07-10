@@ -50,6 +50,8 @@
 
 - <a href="https://auth0.com/" target="_blank">autho.com (platform for authentication)</a>
 - <a href="https://jwt.io/" target="_blank">JWT - JSON Web Tokens</a>
+- <a href="https://movingtohttps.com/" target="_blank">Moving to HTTPS Guide</a>
+- <a href="https://github.com/Aubacca/plantronics" target="_blank">Aubacca - plantronics: Spring Boot https sample</a>
 
 ```php
 netsh wlan show profiles
@@ -98,8 +100,14 @@ netsh wlan show profile "Pro iPhone" key=clear
 
 ## HTML
 
-- Responsive Layout
-  - <a href="https://github.com/haltu/muuri" target="_blank">haltu/Muuri</a>
+### Responsive Layout
+
+- <a href="https://github.com/haltu/muuri" target="_blank">haltu/Muuri</a>
+
+### http to https
+
+- <a href="https://movingtohttps.com/" target="_blank">Moving to HTTPS Guide</a>
+- <a href="https://github.com/Aubacca/plantronics" target="_blank">Aubacca - plantronics: Spring Boot https sample</a>
 
 ## Testing
 
