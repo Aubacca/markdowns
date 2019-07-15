@@ -16,6 +16,16 @@
 - <a href="file:///C:/workspace/projects/tvd/markdowns/tvdTraining/ad-java-b.md" target="_blank">Java for Developers - Additionals</a>
 - <a href="../tvdTraining/fspring.md" target="_blank">Einführung in das Spring Framework (FSPRING)</a>
 
+#### Install jdbc driver in local maven repository
+
+```sh
+mvn install:install-file -Dfile=C:\Users\rohnerp\Downloads\jdbc\ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Dpackaging=jar
+```
+
+```sh
+mvn install:install-file -Dfile=C:\tools\sqldeveloper\jdbc\lib\ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0 -Dpackaging=jar
+```
+
 ## Web Applications
 
 - <a href="https://docs.oracle.com/cd/E14571_01/web.1111/e13712/web_xml.htm#WBAPP502" target="_blank">Oracle - web.xml Deployment Descriptor Elements</a>
@@ -28,6 +38,10 @@
 ### Spring Boot - Micro Services
 
 - <a href="./spring-boot-micro-services.md" target="_blank">Spring Boot - Micro Services</a>
+- <a href="https://dzone.com/articles/microservices-with-cqrs-and-event-sourcing" target="_blank">Microservices With CQRS and Event Sourcing</a>
+- <a href="https://microservices.io/patterns/microservices.html" target="_blank">Pattern: Microservice Architecture</a>
+- <a href="https://microservices.io/patterns/data/cqrs.html" target="_blank">Pattern: Command Query Responsibility Segregation (CQRS)</a>
+- <a href="https://microservices.io/patterns/data/database-per-service.html" target="_blank">Pattern: Database per service</a>
 
 ### Spring Boot - Swagger
 - <a href="./spring-boot-swagger.md" target="_blank">Spring Boot - Swagger</a>

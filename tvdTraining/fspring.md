@@ -161,7 +161,11 @@ Person person = (Person) context.getBean("personSpring");
 
 ### Internet
 
-- <a href="" target="_blank"></a>
+- <a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/" target="_blank">Spring Data JPA - Reference Documentation</a>
+- <a href="https://www.amitph.com/java-persistence-api-guide/" target="_blank">Java Persistence API Guide</a>
+- <a href="https://www.amitph.com/spring-data-jpa-query-methods/" target="_blank">Spring Data JPA – Query Methods</a>
+- <a href="https://www.amitph.com/pagination-sorting-spring-data-jpa/" target="_blank">Pagination and Sorting with Spring Data JPA</a>
+- <a href="https://www.amitph.com/spring-setter-injection-example/" target="_blank">Spring Setter Dependency Injection Example</a>
 
 ### Samples
 
