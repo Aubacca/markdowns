@@ -13,6 +13,9 @@
 
 ### Trivadis Training
 
+Kontakte: Thorsten Maier, Thomas Bröll
+
+
 - <a href="file:///C:/workspace/projects/tvd/markdowns/tvdTraining/ad-java-b.md" target="_blank">Java for Developers - Additionals</a>
 - <a href="../tvdTraining/fspring.md" target="_blank">Einführung in das Spring Framework (FSPRING)</a>
 
