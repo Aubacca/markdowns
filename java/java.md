@@ -15,7 +15,6 @@
 
 Kontakte: Thorsten Maier, Thomas Bröll
 
-
 - <a href="file:///C:/workspace/projects/tvd/markdowns/tvdTraining/ad-java-b.md" target="_blank">Java for Developers - Additionals</a>
 - <a href="../tvdTraining/fspring.md" target="_blank">Einführung in das Spring Framework (FSPRING)</a>
 
@@ -47,6 +46,7 @@ mvn install:install-file -Dfile=C:\tools\sqldeveloper\jdbc\lib\ojdbc8.jar -Dgrou
 - <a href="https://microservices.io/patterns/data/database-per-service.html" target="_blank">Pattern: Database per service</a>
 
 ### Spring Boot - Swagger
+
 - <a href="./spring-boot-swagger.md" target="_blank">Spring Boot - Swagger</a>
 
 ### Application Server: Servlet Container
@@ -167,7 +167,7 @@ java -jar target/dependency/webapp-runner.jar target/<appname>.war
 Then launch app via java. In versions 7.0.29.1 and newer support for a session manager that stores sessions in memcache is built in.
 
 ```sh
-$ java -jar target/dependency/webapp-runner.jar --session-store memcache target/<appname>.war
+java -jar target/dependency/webapp-runner.jar --session-store memcache target/<appname>.war
 ```
 
 ### Maven
