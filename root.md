@@ -11,8 +11,9 @@
 
 ## Frameworks: Best Practices and Tips
 
-- <a href="./angular/angular.md" target="_blank">Angular</a>
+- <a href="./javascript/angular.md" target="_blank">Angular</a>
 - <a href="https://electronjs.org/" target="_blank">Electron</a>
+- <a href="./javascript/vue.md" target="_blank">Vue.js</a>
 
 ## Source Code Management
 
