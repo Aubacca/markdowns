@@ -6,6 +6,9 @@
 - <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/enhancements.html" target="_blank">Java 8 Programming Language Enhancements</a>
 - <a href="https://www.oio.de/public/java/java9/java-9-neuerungen-im-ueberblick.htm?TVD" target="_blank">Java 9 - Die Neuerungen im Überblick</a>
 - <a href="https://jaxenter.de/java-11-features-news-75411" target="_blank">Java 11 ist da! Die neuen Features auf einen Blick</a>
+- <a href="https://blog.oio.de/2019/03/06/java-12-uberblick/" target="_blank">Java 12 Überblick</a>
+- <a href="https://blog.oio.de/2019/09/23/java-13-uberblick/" target="_blank">Java 13 Überblick</a>
+- <a href="" target="_blank"></a>
 
 ## Best Practices
 
