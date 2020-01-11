@@ -4,14 +4,16 @@
 
 - <a href=".\html\html.md" target="_blank">HTML / CSS</a>
 - <a href="./java/java.md" target="_blank">Java</a>
-  - <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
+- <a href="./java/apache-kafka.md" target="_blank">Java - Apache Kafka</a>
+- <a href="./java/jpa.md" target="_blank">Java - JPA</a>
 - <a href="./javascript/typeScript.md" target="_blank">JavaScript / TypeScript</a>
 - <a href="./nodejs/nodejs.md" target="_blank">NodeJS</a>
 
 ## Frameworks: Best Practices and Tips
 
-- <a href="./angular/angular.md" target="_blank">Angular</a>
+- <a href="./javascript/angular.md" target="_blank">Angular</a>
 - <a href="https://electronjs.org/" target="_blank">Electron</a>
+- <a href="./javascript/vue.md" target="_blank">Vue.js</a>
 
 ## Source Code Management
 
@@ -50,6 +52,9 @@
 
 - <a href="https://auth0.com/" target="_blank">autho.com (platform for authentication)</a>
 - <a href="https://jwt.io/" target="_blank">JWT - JSON Web Tokens</a>
+- <a href="https://github.com/Aubacca/plantronics" target="_blank">Aubacca - plantronics: Spring Boot https sample</a>
+- <a href="https://movingtohttps.com/" target="_blank">Moving to HTTPS Guide</a>
+- <a href="https://www.entrepreneur.com/article/282712" target="_blank">The Step by Step Guide to Switching to HTTPS (cool workflow map!!)</a>
 
 ```php
 netsh wlan show profiles
@@ -98,8 +103,15 @@ netsh wlan show profile "Pro iPhone" key=clear
 
 ## HTML
 
-- Responsive Layout
-  - <a href="https://github.com/haltu/muuri" target="_blank">haltu/Muuri</a>
+### Responsive Layout
+
+- <a href="https://github.com/haltu/muuri" target="_blank">haltu/Muuri</a>
+
+### http to https
+
+- <a href="https://github.com/Aubacca/plantronics" target="_blank">Aubacca - plantronics: Spring Boot https sample</a>
+- <a href="https://movingtohttps.com/" target="_blank">Moving to HTTPS Guide</a>
+- <a href="https://www.entrepreneur.com/article/282712" target="_blank">The Step by Step Guide to Switching to HTTPS (cool workflow map!!)</a>
 
 ## Testing
 
@@ -156,12 +168,17 @@ netsh wlan show profile "Pro iPhone" key=clear
 - <a target="_blank" href="https://www.pwabuilder.com/">PWA Builder</a>
 - <a target="_blank" href="https://vaadin.com/progressive-web-applications">vaadin: Progressiv Web Apps Tutorial</a>
 
-## VS Code
+## VS Code	
 
 ### Good Plugins
 
 - add
 - background-black-and-white-355770/
+
+# Cool Tool
+
+- <a target="_blank" href="https://www.freeformatter.com/">Free Online Tools For Developers</a>
+- <a target="_blank" href="http://www.tinyupload.com/">TinyUpload.com</a>
 
 # Hobby
 

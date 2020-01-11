@@ -1,9 +1,14 @@
 # Java
 
+- <a href="https://howtodoinjava.com/" target="_blank">Spring Framework and others. <b><== !IMPORTANT</b></a>
+- <a href="http://www.java2s.com/" target="_blank">Java how to .. <b><== !IMPORTANT</b></a>
 - <a href="https://blog.oio.de/2018/03/22/java-ee-wurde-in-jakarta-ee-umbenannt/" target="_blank">Java EE wurde in Jakarta EE umbenannt</a>
 - <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/enhancements.html" target="_blank">Java 8 Programming Language Enhancements</a>
 - <a href="https://www.oio.de/public/java/java9/java-9-neuerungen-im-ueberblick.htm?TVD" target="_blank">Java 9 - Die Neuerungen im Überblick</a>
 - <a href="https://jaxenter.de/java-11-features-news-75411" target="_blank">Java 11 ist da! Die neuen Features auf einen Blick</a>
+- <a href="https://blog.oio.de/2019/03/06/java-12-uberblick/" target="_blank">Java 12 Überblick</a>
+- <a href="https://blog.oio.de/2019/09/23/java-13-uberblick/" target="_blank">Java 13 Überblick</a>
+- <a href="" target="_blank"></a>
 
 ## Persistence / Database
 
@@ -27,7 +32,20 @@
 
 ### Trivadis Training
 
+Kontakte: Thorsten Maier, Thomas Bröll
+
 - <a href="file:///C:/workspace/projects/tvd/markdowns/tvdTraining/ad-java-b.md" target="_blank">Java for Developers - Additionals</a>
+- <a href="../tvdTraining/fspring.md" target="_blank">Einführung in das Spring Framework (FSPRING)</a>
+
+#### Install jdbc driver in local maven repository
+
+```sh
+mvn install:install-file -Dfile=C:\Users\rohnerp\Downloads\jdbc\ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0 -Dpackaging=jar
+```
+
+```sh
+mvn install:install-file -Dfile=C:\tools\sqldeveloper\jdbc\lib\ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0 -Dpackaging=jar
+```
 
 ## Web Applications
 
@@ -37,6 +55,18 @@
 ### Web Server
 
 ### Application Server
+
+### Spring Boot - Micro Services
+
+- <a href="./spring-boot-micro-services.md" target="_blank">Spring Boot - Micro Services</a>
+- <a href="https://dzone.com/articles/microservices-with-cqrs-and-event-sourcing" target="_blank">Microservices With CQRS and Event Sourcing</a>
+- <a href="https://microservices.io/patterns/microservices.html" target="_blank">Pattern: Microservice Architecture</a>
+- <a href="https://microservices.io/patterns/data/cqrs.html" target="_blank">Pattern: Command Query Responsibility Segregation (CQRS)</a>
+- <a href="https://microservices.io/patterns/data/database-per-service.html" target="_blank">Pattern: Database per service</a>
+
+### Spring Boot - Swagger
+
+- <a href="./spring-boot-swagger.md" target="_blank">Spring Boot - Swagger</a>
 
 ### Application Server: Servlet Container
 
@@ -156,7 +186,7 @@ java -jar target/dependency/webapp-runner.jar target/<appname>.war
 Then launch app via java. In versions 7.0.29.1 and newer support for a session manager that stores sessions in memcache is built in.
 
 ```sh
-$ java -jar target/dependency/webapp-runner.jar --session-store memcache target/<appname>.war
+java -jar target/dependency/webapp-runner.jar --session-store memcache target/<appname>.war
 ```
 
 ### Maven

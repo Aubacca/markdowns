@@ -6,14 +6,19 @@
 
 ## JavaScript
 
-- <a href="https://developer.mozilla.org/de/" target="_blank">Mozilla Developer Network</a>
-- <a href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Mozilla Developer Network: Array</a>
-- <a href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Destrukturierende_Zuweisung" target="_blank">Mozilla Developer Network: Destrukturierende Zuweisung</a>
+- <a target="_blank" href="https://developer.mozilla.org/de/">Mozilla Developer Network</a>
+- <a target="_blank" href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array">Mozilla Developer Network: Array</a>
+- <a target="_blank" href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Destrukturierende_Zuweisung">Mozilla Developer Network: Destrukturierende Zuweisung</a>
+- <a target="_blank" href="https://melanieseltzer.github.io/es6-all-the-things/">ES6 All The Things</a>
 
 ### Libraries
 
 - <a href="https://mciastek.github.io/sal/" target="_blank">sal.js</a>
 - <a href="http://callmecavs.com/jump.js/" target="_blank">Jump.js</a>
+
+### Frameworks
+
+- <a href="./angular.md" target="_blank">Angular</a>
 - <a href="./vue.md" target="_blank">Vue.js</a>
 
 ## TypeScript
