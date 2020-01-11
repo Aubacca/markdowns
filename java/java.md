@@ -14,6 +14,8 @@
 
 - <a href="https://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html" target="_blank">JPA</a>
 - <a href="https://spring.io/projects/spring-data" target="_blank">Spring Data</a>
+- <a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference" target="_blank">Spring Data - JPA Repositories</a>
+- <a href="https://reflectoring.io/unit-testing-spring-boot/" target="_blank">Spring Data - Unit Testing with Spring Boot</a>
 
 ### pom.xml
 ```xml
