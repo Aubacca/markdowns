@@ -5,6 +5,22 @@
 - <a href="https://www.oio.de/public/java/java9/java-9-neuerungen-im-ueberblick.htm?TVD" target="_blank">Java 9 - Die Neuerungen im Überblick</a>
 - <a href="https://jaxenter.de/java-11-features-news-75411" target="_blank">Java 11 ist da! Die neuen Features auf einen Blick</a>
 
+## Persistence / Database
+
+- <a href="https://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html" target="_blank">JPA</a>
+- <a href="https://spring.io/projects/spring-data" target="_blank">Spring Data</a>
+
+### pom.xml
+```xml
+...
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+...
+```
+
+
 ## Best Practices
 
 - <a href="./java-servlet.md" target="_blank">Java Servlet</a>
