@@ -38,6 +38,7 @@ Kontakte: Thorsten Maier, Thomas Bröll
 
 - <a href="file:///C:/workspace/projects/tvd/markdowns/tvdTraining/ad-java-b.md" target="_blank">Java for Developers - Additionals</a>
 - <a href="../tvdTraining/fspring.md" target="_blank">Einführung in das Spring Framework (FSPRING)</a>
+- <a href="../tvdTraining/jmicro.md" target="_blank">Microservices mit Java (JMICRO)</a>
 
 #### Install jdbc driver in local maven repository
 
