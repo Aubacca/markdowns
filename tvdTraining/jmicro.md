@@ -2,12 +2,16 @@
 
 ## Dropwizard
 
-- <a href="https://www.dropwizard.io" target="_blank">Dropwizard - Home</a>
-- <a href="https://github.com/dropwizard" target="_blank">Dripwizard - Github</a>
-- <a href="https://github.com/dropwizard/dropwizard/tree/master/dropwizard-archetypes" target="_blank">Dropwizard Archetypes (mvn)</a>
+- [Dropwizard - Home](https://www.dropwizard.io)
+- [Dropwizard - Github](https://github.com/dropwizard)
+- [Dropwizard Archetypes (mvn)](https://github.com/dropwizard/dropwizard/tree/master/dropwizard-archetypes)
 - <a href="" target="_blank"></a>
-- <a href="" target="_blank"></a>
-- <a href="" target="_blank"></a>
+
+### Examples
+
+- [dropwizard/dropwizard-example/
+](https://github.com/dropwizard/dropwizard/tree/master/dropwizard-example)
+- [Dropwizard Tutorial – Hello World Example](https://howtodoinjava.com/dropwizard/tutorial-and-hello-world-example/)
 
 ### Minimum Dropwizard Example
 
@@ -32,6 +36,12 @@ public class AppApplication extends Application<AppConfiguration> {
 
 ```sh
 java -jar ./target/app--1.0-SNAPSHOT.jar server configuration.yml
+```
+
+Application healthcheck:
+
+```sh
+http://localhost:8081/healthcheck
 ```
 
 ## Spring Data
