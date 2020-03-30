@@ -19,6 +19,11 @@
 
 - <a href="./scm/scm.md" target="_blank">Source Code Management</a>
 
+## Artificial Intelligence
+
+- <a href="./ai/rivescript.md" target="_blank">Rivescript</a>
+
+
 ## Chocolatey
 
 - <a href="./Chocolatey/Chocolatey.md" target="_blank">Chocolatey</a>
